@@ -1,0 +1,43 @@
+<style>
+    .toggle-button {
+        display: inline-block;
+        background: #cacaca;
+        width: 200px;
+        height: 100px;
+        border-radius: 200px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .toggle-button::before {
+        content: "";
+        position: absolute;
+        background: rgb(255, 255, 255);
+        border-radius: 200px;
+        margin: 5px;
+        width: 90px;
+        height: 90px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+    
+    .toggle-checkbox:checked + .toggle-button {
+        background: #2f2f2f;
+    }
+
+    .toggle-checkbox:checked + .toggle-button::before {
+        transform: translateX(100px);
+    }
+
+    input {
+        display: none;
+    }
+</style>
+<body class="light">  
+    <div class="toggle-container">
+        <input type="checkbox" class="toggle-checkbox" id="toggle-checkbox">
+        <label for="toggle-checkbox" class="toggle-button" id="toggle-button"></label>
+    </div>
+</body>
+<script>
+</script>
