@@ -1,6 +1,6 @@
-# 30 Simple CSS Projects
+# 30 Simple `CSS` UI elements
 
-This repository contains a collection of diverse, simple projects created with pure CSS and a touch of JavaScript for interactivity. Feel free to use them in your own projects.
+This repository contains a collection of diverse, simple projects created with pure `CSS` and a touch of JavaScript for interactivity. Feel free to use them in your own projects.
 
 ## Tech Stack
 - HTML
