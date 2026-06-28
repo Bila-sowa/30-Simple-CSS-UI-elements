@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<style>
+    #check {
+        display: none;
+    }
+
+    label {
+        width: 120px;
+        height: 120px;
+        background: #234bb0bb;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    label:hover {
+        background: #203d86bb;
+    }
+
+    .fa-download {
+        color: white;
+        font-size: 60px;
+    }
+
+    #check:checked + label {
+        animation: spin 1s linear 3;
+    }
+
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<body>
+    <input type="checkbox" id="check">
+
+    <label for="check">
+        <i class="fa-solid fa-download"></i>
+    </label>
+    <a style="display: none;" href='/README.md' download="">
+        Завантажити
+    </a>
+</body>
+<script>
+    document.querySelector("#check").addEventListener("click", () => {
+        setTimeout(() => {
+            document.querySelector("a").click();
+        }, 2000)
+    });
+</script>
